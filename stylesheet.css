@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 90px 0;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: #1A1B1D;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold; 
+
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+  color:#000000;
+  font-style: oblique;
+  font-size: 100%;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display :none;
+}
+
+
+.lessons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(./images/background-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.lessons .card {
+  width: 300px;
+  height: 400px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  border-radius: 2px;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.card {
+  background-image: url(./images/argo-1.jpg); /* background image card pertama */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.card h1 {
+  font-size: 30px;
+  font-family: "Lobster Two", cursive;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card .btn {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px 0 20px 0;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.card .btn:hover {
+  padding: 5px 20px;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.text:hover {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+/* menambahkan background image di card kedua */
+.two {
+  background-image: url(./images/argo-2.jpg);
+}
+
+/* menambahkan background image di card ketiga */
+.three {
+  background-image: url(./images/argo-3.jpg);
+}
+
+/* menambahkan background image di card keempat */
+.four {
+  background-image: url(./images/argo-4.jpg);
+}
+
+.two p {
+  width: 90%;
+}
+
+.three p {
+  width: 90%;
+}
+
+.four p {
+  width: 90%;
+}
+
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.message-wrapper span {
+  margin-top: 15px;
+}
+.message {
+  padding: 15px 40px;
+  background-color: #3b5998;
+  cursor: pointer;
+  box-shadow: 0 7px #121b2e;
+  margin :10px 10px;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #eee;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 1px;
+  font-family: sans-serif;
+}
+
+.form h3 {
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(133, 133, 133);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form select {
+ width: 240px;
+ height: 35px;
+ background: transparent;
+ border-bottom: 1px solid #eee;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ color: rgb(0, 0, 0);
+ font-size: 15px;
+ letter-spacing: 1px;
+ margin-top: 1px;
+ font-family: sans-serif;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color:#5C2B10;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  background-color: #005465;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+  margin-right: -25px;
+}
+.footer-right h2 {
+color: #121b2e;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-right h3{
+  color:#005465;
+  font-style: italic;
+}
